@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETF 비교 대시보드</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: #f4f6f8; margin: 20px; }
+  h1 { color: #333; }
+  table { border-collapse: collapse; width: 100%; background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+  th { background-color: #007acc; color: white; }
+  tr:nth-child(even) { background-color: #f9f9f9; }
+  caption { font-size: 1.2em; margin: 10px; font-weight: bold; }
+  .emoji { font-size: 1.2em; }
+  .summary { background-color: #e7f3ff; padding: 15px; margin-top: 20px; border-left: 5px solid #007acc; }
+</style>
+</head>
+<body>
+<h1>ETF 비교 대시보드</h1>
+<table>
+<caption>수수료, 구성종목, 분배금 등 주요 정보 비교</caption>
+<thead>
+<tr>
+<th>ETF명 (티커)</th>
+<th>추종지수</th>
+<th>🏦 총보수(수수료)</th>
+<th>🧩 주요구성</th>
+<th>💰 분배금(배당률, 빈도)</th>
+<th>💡 기타특징</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>🇺🇸 SPY</td><td>S&P500</td><td>0.09%</td><td>S&P500 대형주</td><td>약 1.3%/연, 분기</td><td>ETF 원조, 유동성 최고</td></tr>
+<tr><td>🇺🇸 VOO</td><td>S&P500</td><td>0.03%</td><td>S&P500 대형주</td><td>0.91%/연, 분기</td><td>저보수, 장기투자 인기</td></tr>
+<tr><td>🇺🇸 SPLG</td><td>S&P500</td><td>0.02%</td><td>S&P500 대형주</td><td>1.34%/연, 분기</td><td>초저보수, 소액투자 적합</td></tr>
+<tr><td>🇰🇷 TIGER/코덱스 S&P500</td><td>S&P500</td><td>0.07~0.09%</td><td>S&P500 대형주</td><td>약 1%/연, 분기</td><td>환헤지/비헤지 선택</td></tr>
+<tr><td>🇺🇸 QQQ</td><td>나스닥100</td><td>0.20%</td><td>나스닥100</td><td>0.40%/연, 분기</td><td>기술주 비중 높음</td></tr>
+<tr><td>🇺🇸 QQQM</td><td>나스닥100</td><td>0.15%</td><td>나스닥100</td><td>QQQ와 유사</td><td>QQQ 저보수 버전</td></tr>
+<tr><td>🇰🇷 TIGER/코덱스 나스닥100</td><td>나스닥100</td><td>0.07~0.09%</td><td>나스닥100</td><td>약 0.4%/연, 분기</td><td>환헤지/비헤지 선택</td></tr>
+<tr><td>🇺🇸 SCHD</td><td>Dow Jones U.S. Dividend 100</td><td>0.06%</td><td>고배당 우량주 100</td><td>약 3.5~4%/연, 분기</td><td>배당성장, 가치주</td></tr>
+<tr><td>🇰🇷 TIGER S&P500 배당귀족</td><td>S&P500 Dividend Aristocrats</td><td>0.25%</td><td>25년 이상 배당성장주</td><td>약 2%/연, 분기</td><td>배당성장주 집중</td></tr>
+<tr><td>🇰🇷 KODEX 미국S&P500 배당귀족 커버드콜</td><td>S&P500 Dividend Aristocrats + 커버드콜</td><td>0.45%</td><td>배당+옵션 프리미엄</td><td>6.27%/연, 분기</td><td>커버드콜 전략, 고배당</td></tr>
+</tbody>
+</table>
+<div class="summary">
+<h2>📊 대시보드 요약 (이모지 활용)</h2>
+<ul>
+<li>🇺🇸 <strong>SPY/VOO/SPLG</strong><br>🏦 수수료: SPY(0.09%), VOO(0.03%), SPLG(0.02%)<br>💰 배당: SPLG(1.34%) &gt; SPY(~1.3%) &gt; VOO(0.91%)<br>🧩 구성: S&P500 동일, 유동성·운용사만 차이<br>💡 SPLG는 소액, VOO는 저보수, SPY는 유동성 최고</li>
+<li>🇺🇸 <strong>QQQ/QQQM</strong><br>🏦 수수료: QQQ(0.20%), QQQM(0.15%)<br>💰 배당: 0.40%/연, 분기<br>🧩 구성: 나스닥100, 기술주 비중 높음<br>💡 QQQM이 저렴, QQQ가 거래량 많음</li>
+<li>🇺🇸 <strong>SCHD</strong><br>🏦 수수료: 0.06%<br>💰 배당: 약 3.5~4%/연, 분기<br>🧩 구성: 미국 고배당·우량주 100종<br>💡 배당성장+가치주, 장기 투자 인기</li>
+<li>🇰🇷 <strong>TIGER/코덱스 S&P500/나스닥100</strong><br>🏦 수수료: 0.07~0.09%<br>💰 배당: S&P500 약 1%, 나스닥100 약 0.4%<br>🧩 구성: 미국지수와 동일, 환헤지/비헤지<br>💡 국내 원화거래, 세금·환전 편의</li>
+<li>🇰🇷 <strong>TIGER S&P500 배당귀족/커버드콜</strong><br>🏦 수수료: 0.25%~0.45%<br>💰 배당: 배당귀족 2%, 커버드콜 6.27%<br>🧩 구성: 25년 이상 연속배당/커버드콜 옵션<br>💡 커버드콜은 옵션 프리미엄까지 지급</li>
+</ul>
+<p>📝 참고<br>- 국내 ETF는 환헤지/비헤지, 원화거래, 세금 편의성 등 장점이 있습니다.<br>- 미국 ETF는 운용보수, 유동성, 장기성과에서 강점이 있습니다.<br>- 배당률은 시장 상황, 환율, 분배정책에 따라 변동될 수 있습니다.</p>
+</div>
+</body>
+</html>
